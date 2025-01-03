@@ -1,1 +1,1 @@
-# Next Auth.JS With Nest.JS Mongoose!
+# Full Stack Next Nest.JS Mongoose App!

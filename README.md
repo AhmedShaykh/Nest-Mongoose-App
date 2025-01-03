@@ -8,5 +8,5 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 <h1 align="center">
-  Next Auth.JS With Nest.JS Mongoose!
+  Full Stack Next Nest.JS Mongoose App!
 </h1>
