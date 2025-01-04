@@ -1,5 +1,4 @@
-import withAuth from "@/guard/withAuth";
-import Login from "@/Components/Login";
+import Login from "@/components/Login";
 
 const LoginPage = () => {
     return (
@@ -7,4 +6,4 @@ const LoginPage = () => {
     )
 };
 
-export default withAuth(LoginPage);
+export default LoginPage;

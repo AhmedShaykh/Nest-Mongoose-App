@@ -1,4 +1,7 @@
+import Cookies from "js-cookie";
 import axios from "axios";
+
+let token = Cookies.get("token");
 
 let baseURL = `http://localhost:8080/api`;
 
@@ -39,8 +42,6 @@ export async function LoginAPI(formData: any) {
 };
 
 export async function UserAPI() {
-
-    const token = localStorage.getItem("token");
 
     try {
 

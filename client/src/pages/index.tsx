@@ -1,5 +1,4 @@
-import withAuth from "@/guard/withAuth";
-import Main from "@/Components/Main";
+import Main from "@/components/Main";
 
 const Home = () => {
     return (
@@ -7,4 +6,4 @@ const Home = () => {
     )
 };
 
-export default withAuth(Home);
+export default Home;

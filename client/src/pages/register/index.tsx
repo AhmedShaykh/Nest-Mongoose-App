@@ -1,5 +1,4 @@
-import Register from "@/Components/Register";
-import withAuth from "@/guard/withAuth";
+import Register from "@/components/Register";
 
 const RegisterPage = () => {
     return (
@@ -7,4 +6,4 @@ const RegisterPage = () => {
     )
 };
 
-export default withAuth(RegisterPage);
+export default RegisterPage;

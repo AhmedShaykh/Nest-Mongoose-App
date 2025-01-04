@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { UserAPI } from "@/lib/services";
 import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 
 const Main = () => {
 
@@ -38,7 +39,7 @@ const Main = () => {
 
     const Logout = () => {
 
-        localStorage.removeItem("token");
+        Cookies.remove("token");
 
         router.push("/login");
 
@@ -54,7 +55,7 @@ const Main = () => {
                 </div>
             ) : (
                 <>
-                    <div className="flex justify-center items-center my-7 gap-5">
+                    <div className="flex flex-col justify-center items-center h-screen gap-5">
                         <h1 className="text-3xl font-semibold">
                             {user?.firstName} {user?.lastName}
                         </h1>

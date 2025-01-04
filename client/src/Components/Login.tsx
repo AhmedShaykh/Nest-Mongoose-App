@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { LoginAPI } from "@/lib/services";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 
 const Login = () => {
 
@@ -29,13 +30,7 @@ const Login = () => {
 
             const response: any = await LoginAPI(formData);
 
-
-            localStorage.setItem("token", response.data.access_token);
-
-            setFormData({
-                email: "",
-                password: ""
-            });
+            Cookies.set("token", response.data.access_token, { expires: 7 });
 
             router.push("/");
 
